@@ -1,3 +1,25 @@
 Name: Groups
 Id: g=33ac98afcbbcd645bc8146197074cc43
 Type: GroupsCategoryFolder
+Children:
+- Name: Admin
+  Id: g=bbc6306bf9efd10c1e1341ee5e8f62f6
+  Type: GroupType
+- Name: Maintenance
+  Id: g=8c85da41620142f10828d2eb772e21c1
+  Type: GroupType
+- Name: Engineer
+  Id: g=796ee75df8cd1ff13844804f6455c12e
+  Type: GroupType
+- Name: Operator1
+  Id: g=aa2549f0cc4eb1a80cc0b02e08b234f6
+  Type: GroupType
+- Name: Operator2
+  Id: g=3812a2fb10dbb762964a1b5356e71cfe
+  Type: GroupType
+- Name: Operator3
+  Id: g=da1d461506f9ebf625016af0c0d14c0b
+  Type: GroupType
+- Name: Operator4
+  Id: g=03436cb81930dd9e749bb0d048c52253
+  Type: GroupType
