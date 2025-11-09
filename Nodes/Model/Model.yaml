@@ -2,15 +2,17 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - Name: HMISettings
+  Id: g=9d6b589e4787c43c63755eaf8d6f0ecf
   Type: BaseObjectType
   Children:
   - Name: CompanyLogo
     Type: BaseDataVariableType
     DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/Graphics/FrommConnect Horizontal dropshadow.png"
   - Name: CompanyName
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
+    Value: "FrommConnect"
   - Name: Clock
     Type: BaseDataVariableType
     DataType: DateTime

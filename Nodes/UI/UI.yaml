@@ -245,6 +245,129 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/myOptixTemplate@BrowseName"
+  - Name: HeaderPanel
+    Type: Panel
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BackgorundPanel
+      Type: AdvancedSVGImage
+      Children:
+      - Name: SVGElementProperties
+        Type: BaseObjectType
+        Children:
+        - Name: AdvancedSVGImageProperty1
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "panelGradient"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#cfcfcf"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/Graphics/background-panel-Gradient.svg"
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: FillMode
+        Type: BaseDataVariableType
+        DataType: FillModeEnum
+        ModellingRule: Optional
+        Value: 1
+      - Name: MoveTarget
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: LeftHorizontalLayout
+      Type: RowLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 500.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: CompanyLogo
+        Type: Image
+        Children:
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../HMISettings/CompanyLogo"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+      - Name: TitleLabel
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Label1"}
+  - Name: HMISettings
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/myOptixTemplate/Model/HMISettings"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
 - File: StyleSheets/StyleSheets.yaml
