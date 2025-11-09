@@ -1,2 +1,16 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- Name: HMISettings
+  Type: BaseObjectType
+  Children:
+  - Name: CompanyLogo
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: CompanyName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Clock
+    Type: BaseDataVariableType
+    DataType: DateTime
