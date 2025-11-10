@@ -59,16 +59,32 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  15:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.0
+  16:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  17:
+   Uri: 'urn:FTOptix:SerialPort'
+   Module: FTOptix.SerialPort
+   Version: 1.0
+  18:
+   Uri: 'urn:FTOptix:SerialPort:Net'
+   Module: FTOptix.SerialPort.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 251
-  Objects: 136
-  ObjectTypes: 1
-  Variables: 114
+  TotalNodeCount: 5822
+  Objects: 1312
+  ObjectTypes: 34
+  Variables: 4459
   VariableTypes: 0
   DataTypes: 0
-  Methods: 0
-  References: 1
+  Methods: 17
+  References: 68
   ReferenceTypes: 0
-  Files: 23
+  Files: 34
  Nodes:
  - File: Nodes/myOptixTemplate.yaml

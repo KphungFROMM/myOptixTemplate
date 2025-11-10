@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Optix-friendly: Pressed navigation element
+     Matches geometry of unpressed exactly; darker gradient/stroke/inner band for the pressed look.
+     Color properties are exposed via data-* attributes for tooling/theming. -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 48"
+     width="200" height="48"
+     role="img"
+     aria-labelledby="title desc"
+     data-btn-bg-start="#C0C0C0"
+     data-btn-bg-end="#A8A8A8"
+     data-btn-border="#8F8F8F"
+     data-btn-inner-band="#000000"
+     data-btn-inner-band-opacity="0.06"
+     data-btn-radius="8">
+  <title id="title">Nav Pressed</title>
+  <desc id="desc">Pressed nav element — darker gradient with stronger inner band and explicit fallback; properties exposed as data-attrs.</desc>
+
+  <defs>
+    <!-- pressed background gradient -->
+    <linearGradient id="btnGradientPressed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A8A8A8"/>
+    </linearGradient>
+
+    <!-- inner darker band to emphasize press -->
+    <linearGradient id="btnInnerBandPressed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fallback -->
+  <rect x="0" y="2" width="200" height="42" rx="8" fill="#C0C0C0"/>
+
+  <!-- gradient background (same geometry as unpressed so swapping won't move content) -->
+  <rect x="0" y="2" width="200" height="42" rx="8" fill="url(#btnGradientPressed)" stroke="#8F8F8F" stroke-width="1"/>
+
+  <!-- stronger inner band -->
+  <rect x="6" y="30" width="188" height="8" rx="5" fill="url(#btnInnerBandPressed)"/>
+
+  <!-- content slot (left empty for icons/labels) -->
+  <g id="content-slot" transform="translate(12,0)"/>
+</svg>

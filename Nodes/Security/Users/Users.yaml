@@ -1,3 +1,48 @@
 Name: Users
 Id: g=8cdfe95c558e909385d4fe7ddc9a2655
 Type: UsersCategoryFolder
+Children:
+- Name: Kim Phung
+  Id: g=f30b0c4fc576704685c739e273bc6946
+  Type: UserType
+  Children:
+  - Name: Password
+    Id: g=e5fdf3da748f9b02feb44b6f3e160a41
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Children:
+    - Name: Hash
+      Id: g=10b13703a56935abd342690755b2fda0
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [99,96,238,240,216,34,207,123,245,160,111,153,34,181,241,252,50,208,75,58,22,71,110,135,150,42,211,183,135,45,124,98],
+         "Salt": [153,11,0,58,183,252,51,76,31,157,223,19,84,22,27,157,175,155,3,107,50,139,55,188,126,130,90,29,250,172,4,253]
+        }
+       }
+    - Name: ChangeTimestamp
+      Id: g=831b69b9dd211674a6be43781efb921b
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2025-11-10T01:23:40.3866337"
+    - Name: History
+      Id: g=48fc385a8369acc8394e0a2c8673df98
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[99,96,238,240,216,34,207,123,245,160,111,153,34,181,241,252,50,208,75,58,22,71,110,135,150,42,211,183,135,45,124,98],"Salt":[153,11,0,58,183,252,51,76,31,157,223,19,84,22,27,157,175,155,3,107,50,139,55,188,126,130,90,29,250,172,4,253]}}]
+  - Class: Reference
+    Type: HasGroup
+    Target: g=bbc6306bf9efd10c1e1341ee5e8f62f6

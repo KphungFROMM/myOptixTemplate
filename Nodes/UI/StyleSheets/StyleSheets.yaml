@@ -2,6 +2,7 @@ Name: StyleSheets
 Type: FolderType
 Children:
 - Name: myStyleSheet
+  Id: g=31150d9d4fa19387f4bdeced5150a7a6
   Type: StyleSheet
   Children:
   - Name: ButtonStyles
@@ -161,6 +162,28 @@ Children:
     Children:
     - Name: Default
       Type: LabelStyle
+    - Name: HeaderTitle
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Header
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
   - Name: RadioButtonStyles
     Type: BaseObjectType
     Children:
@@ -181,6 +204,21 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 1.0
+    - Name: Background
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f0"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#cfcfcf"
   - Name: ScreenStyles
     Type: BaseObjectType
     Children:
@@ -194,3 +232,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     Value: "#b3b3b3"
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f5f5f5"

@@ -16,3 +16,16 @@ Children:
   - Name: Clock
     Type: BaseDataVariableType
     DataType: DateTime
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../NetLogic/ClockLogic/Time"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: Alarm
+  Type: BaseDataVariableType
+  DataType: Boolean

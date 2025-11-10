@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Optix-friendly: Unpressed navigation element
+     Patterned after your working background SVG: gradients + exposed data-* color properties + solid fallback.
+     Geometry matches the pressed asset so swapping states won't shift content (x=0 y=2 width=200 height=42). -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 48"
+     width="200" height="48"
+     role="img"
+     aria-labelledby="title desc"
+     data-btn-bg-start="#E6E6E6"
+     data-btn-bg-end="#DADADA"
+     data-btn-border="#BDBDBD"
+     data-btn-inner-band="#DDDDDD"
+     data-btn-inner-band-opacity="0.03"
+     data-btn-radius="8">
+  <title id="title">Nav Unpressed</title>
+  <desc id="desc">Unpressed nav element — gradient fill with explicit fallback and exposed color properties.</desc>
+
+  <defs>
+    <!-- background gradient -->
+    <linearGradient id="btnGradientUnpressed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6E6E6"/>
+      <stop offset="100%" stop-color="#DADADA"/>
+    </linearGradient>
+
+    <!-- subtle inner bottom band (very light) -->
+    <linearGradient id="btnInnerBandUnpressed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDDDDD" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#DDDDDD" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fallback solid background using start color (renders if gradient unsupported) -->
+  <rect x="0" y="2" width="200" height="42" rx="8" fill="#E6E6E6"/>
+
+  <!-- gradient background -->
+  <rect x="0" y="2" width="200" height="42" rx="8" fill="url(#btnGradientUnpressed)" stroke="#BDBDBD" stroke-width="1"/>
+
+  <!-- very light bottom band to echo pressed language without top bar -->
+  <rect x="6" y="30" width="188" height="6" rx="4" fill="url(#btnInnerBandUnpressed)"/>
+
+  <!-- content slot (left empty for icons/labels) -->
+  <g id="content-slot" transform="translate(12,0)"/>
+</svg>

@@ -1,0 +1,6 @@
+Name: Templates
+Type: FolderType
+Children:
+- File: Dialogs/Dialogs.yaml
+- File: Panels/Panels.yaml
+- File: Buttons/Buttons.yaml

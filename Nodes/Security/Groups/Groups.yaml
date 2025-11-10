@@ -5,21 +5,112 @@ Children:
 - Name: Admin
   Id: g=bbc6306bf9efd10c1e1341ee5e8f62f6
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=972d187ec615065f345a50d48cb393e1
+  - Class: Reference
+    Type: HasRole
+    Target: g=d30971f5a415f7b19d29a7c6e923558d
+  - Class: Reference
+    Type: HasRole
+    Target: g=9606be8b56842a3a0dc51f777b030110
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=febd4613ce13939990bd56836934c555
+  - Class: Reference
+    Type: HasRole
+    Target: g=30584f2e4d37174cb722c382878ae0fc
 - Name: Maintenance
   Id: g=8c85da41620142f10828d2eb772e21c1
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=9606be8b56842a3a0dc51f777b030110
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=febd4613ce13939990bd56836934c555
+  - Class: Reference
+    Type: HasRole
+    Target: g=30584f2e4d37174cb722c382878ae0fc
 - Name: Engineer
   Id: g=796ee75df8cd1ff13844804f6455c12e
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=d30971f5a415f7b19d29a7c6e923558d
+  - Class: Reference
+    Type: HasRole
+    Target: g=9606be8b56842a3a0dc51f777b030110
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=febd4613ce13939990bd56836934c555
+  - Class: Reference
+    Type: HasRole
+    Target: g=30584f2e4d37174cb722c382878ae0fc
 - Name: Operator1
   Id: g=aa2549f0cc4eb1a80cc0b02e08b234f6
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
 - Name: Operator2
   Id: g=3812a2fb10dbb762964a1b5356e71cfe
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
 - Name: Operator3
   Id: g=da1d461506f9ebf625016af0c0d14c0b
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=febd4613ce13939990bd56836934c555
 - Name: Operator4
   Id: g=03436cb81930dd9e749bb0d048c52253
   Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=f76f0848f3261452ddb37eae7f61ba8f
+  - Class: Reference
+    Type: HasRole
+    Target: g=52735f28153dff6e31988da079cfffe3
+  - Class: Reference
+    Type: HasRole
+    Target: g=febd4613ce13939990bd56836934c555
+  - Class: Reference
+    Type: HasRole
+    Target: g=30584f2e4d37174cb722c382878ae0fc
